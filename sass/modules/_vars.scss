@@ -1,0 +1,118 @@
+//COLORS
+$color-mainPink:rgb(218, 47, 227);
+$color-inside: rgb(249, 249, 249);
+$color-purpleStudio:rgb(54, 27, 129);
+$color-purpleBlue: rgb(60, 6, 73);
+
+
+//FONT
+$ff-primary:'Raleway', sans-serif ;
+
+//HEADING
+@mixin h1heading {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: $ff-primary;
+}
+
+@mixin h2heading {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: $ff-primary;
+}
+
+@mixin h3heading {
+    font-size: 26px;
+    font-family: $ff-primary;
+}
+
+@mixin h4heading {
+    font-size: 20px;
+    font-family: $ff-primary;
+}
+
+@mixin h5heading {
+    font-size: 18px;
+    font-family: $ff-primary;
+}
+
+@mixin h6heading {
+    font-size: 16px;
+    font-family: $ff-primary;
+}
+
+//BUTTONS
+@mixin btnPrimaryL {
+  color: $color-mainPink;
+  background-color: $color-inside;
+  font-size: 25px;
+  font-family: $ff-primary;
+  text-transform: uppercase;
+  transition: all ease-in-out .3s;
+  padding: 12px;
+  min-width: 200px;
+  border-radius: 30px;
+
+  &:hover {
+    color: white;
+    background-color: $color-mainPink;
+    transform: scale(1.0);
+  }
+}
+
+@mixin btnSecondaryL {
+
+  color: $color-purpleBlue;
+  background-color: $color-purpleBlue;
+  font-size: 25px;
+  font-family: $ff-primary;
+  text-transform: uppercase;
+  transition: all ease-in-out .3s;
+  padding: 12px;
+  min-width: 200px;
+  border-radius: 30px;
+
+  &:hover {
+    color: white;
+    background-color: $color-purpleBlue;
+    // -webkit-box-shadow: 0px 0px 20px 2px gray;
+    // box-shadow: 0px 0px 20px 2px gray;
+    transform: scale(1.0);
+  }
+
+}
+
+@mixin btnThreeL {
+  
+  color: $color-inside;
+  background-color: $color-mainPink;
+  font-size: 25px;
+  font-family: $ff-primary;
+  text-transform: uppercase;
+  transition: all ease-in-out .3s;
+  padding: 12px;
+  min-width: 200px;
+  border-radius: 30px;
+
+  &:hover {
+    border: 3px solid $color-inside;
+    color: $color-purpleStudio;
+    background-color: white;
+    // -webkit-box-shadow: 0px 0px 20px 2px gray;
+    // box-shadow: 0px 0px 20px 2px gray;
+    transform: scale(1.0);
+  }
+}
+
+
+
+.butn {
+    @include btnPrimaryL;
+}
+
+.butn1 {
+    @include btnSecondaryL;
+}
+.butn2 {
+    @include btnThreeL;
+}
