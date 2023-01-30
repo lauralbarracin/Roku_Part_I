@@ -2,17 +2,22 @@ body {
   background-image: url(../assets/background.png);
 }
 
+
+
+
 .butn {
-  color: rgb(60, 6, 73);
+  color: rgb(218, 47, 227);
   background-color: rgb(249, 249, 249);
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 900;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   transition: all ease-in-out 0.3s;
-  padding: 12px;
-  min-width: 200px;
+  padding: 4px;
+  min-width: 100px;
   border-radius: 30px;
 }
+
 .butn:hover {
   color: white;
   background-color: rgb(218, 47, 227);
@@ -129,12 +134,16 @@ input {
 }
 
 .nav {
-  position: fixed;
+  /*position: fixed;*/
+
   top: 0;
   left: 0;
   width: 100%;
   padding: 15px 200px;
-  background: #e9c6f0;
+
+  background: #d83cf8;
+
+
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -156,7 +165,7 @@ a {
 .nav .logo {
   /* font-size: 22px;
    font-weight: 500;*/
-  height: 70px;
+  height: 30px;
   width: auto;
 }
 
@@ -286,5 +295,36 @@ a {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 }
+
+.movies {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movies li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.movies li img {
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+.movies li h2 {
+  color: #fff;
+  font-size: 1.4em;
+  padding: 15px 10px 0;
+  margin-top: auto;
+}
+
 
 /*# sourceMappingURL=main.css.map */

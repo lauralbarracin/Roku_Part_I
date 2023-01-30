@@ -1,5 +1,7 @@
 //COLORS
-$color-mainPurple:rgb(218, 47, 227);
+
+$color-mainPink:rgb(218, 47, 227);
+
 $color-inside: rgb(249, 249, 249);
 $color-purpleStudio:rgb(54, 27, 129);
 $color-purpleBlue: rgb(60, 6, 73);
@@ -43,19 +45,23 @@ $ff-primary:'Raleway', sans-serif ;
 
 //BUTTONS
 @mixin btnPrimaryL {
-  color: $color-purpleBlue;
+
+  color: $color-mainPink;
   background-color: $color-inside;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 900;
   font-family: $ff-primary;
   text-transform: uppercase;
   transition: all ease-in-out .3s;
-  padding: 12px;
-  min-width: 200px;
+  padding: 4px;
+  min-width: 100px;
+
   border-radius: 30px;
 
   &:hover {
     color: white;
-    background-color: $color-mainPurple;
+
+    background-color: $color-mainPink;
     transform: scale(1.0);
   }
 }
@@ -85,7 +91,8 @@ $ff-primary:'Raleway', sans-serif ;
 @mixin btnThreeL {
   
   color: $color-inside;
-  background-color: $color-mainPurple;
+
+  background-color: $color-mainPink;
   font-size: 25px;
   font-family: $ff-primary;
   text-transform: uppercase;

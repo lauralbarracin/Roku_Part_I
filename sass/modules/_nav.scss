@@ -1,10 +1,12 @@
 .nav {
-    position: fixed;
+
+    /*position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;
     padding: 15px 200px;
-    background: #e9c6f0;
+    background: #d83cf8;
+
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   .nav,
@@ -22,7 +24,7 @@
   .nav .logo {
    /* font-size: 22px;
     font-weight: 500;*/
-    height: 70px;
+    height: 30px;
     width: auto;
   }
   .nav .nav-links {
