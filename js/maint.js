@@ -20,6 +20,7 @@ navOpenBtn.addEventListener("click", () => {
 });
 navCloseBtn.addEventListener("click", () => {
     nav.classList.remove("openNav");
+
 });
 
 /*const options = {
@@ -72,3 +73,6 @@ fetch('https://online-movie-database.p.rapidapi.com/auto-complete?q=classic', op
 
 
     .catch(err => console.error(err));
+
+});
+
