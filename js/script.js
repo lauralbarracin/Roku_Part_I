@@ -1,12 +1,13 @@
-const options = {
+/*const options = {
     method: 'GET', //consulta, es una peticion get. 
-    headers: {
-        'X-RapidAPI-Key': '4f09abf09amsh44c8275d607800cp1a32dajsn86ab48280fb0',
-        'X-RapidAPI-Host': 'mdblist.p.rapidapi.com'
-    }
+    redirect: "follow",
+
+    'API Key': 'k_ilc28crm', //esto sale del API
+    'id': 'tt1375666'
+
 };
 
-fetch('https://mdblist.p.rapidapi.com/?s=classic', options)
+fetch('https://imdb-api.com/en/API/Images/k_ilc28crm/tt1375666/Short', options)
     .then(response => response.json()) // son los datos que atrapa - data type json
 
     .then(data => { //arrow function => (name => parametros.accion())
@@ -29,6 +30,7 @@ fetch('https://mdblist.p.rapidapi.com/?s=classic', options)
             const container = document.querySelector("#container");
 
             container.appendChild(paragraph);*/
-        })
+/* })
     })
     .catch(err => console.error(err));
+    */

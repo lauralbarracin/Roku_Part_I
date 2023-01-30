@@ -45,12 +45,13 @@ $ff-primary:'Raleway', sans-serif ;
 @mixin btnPrimaryL {
   color: $color-mainPink;
   background-color: $color-inside;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 900;
   font-family: $ff-primary;
   text-transform: uppercase;
   transition: all ease-in-out .3s;
-  padding: 12px;
-  min-width: 200px;
+  padding: 4px;
+  min-width: 100px;
   border-radius: 30px;
 
   &:hover {
